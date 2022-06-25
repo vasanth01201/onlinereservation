@@ -1,0 +1,803 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bookme</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="favicon.ico" type="image/ico">
+  <link rel="stylesheet" href="styles/vendor.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/vendor/modernizr.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<style type="text/css">
+  html{
+    line-height: 0.15;
+  }
+  .form_btn{
+    background: #f17509;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 40%;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .form_btn:hover{
+    opacity: 1;
+  }
+</style>
+
+<body class="home additional-bar">
+  <header class="header1">
+      <div class="nav-row ctrl-wraper2 clearfix">
+        <a class="logo" href="index.html">
+          <!-- <img src="./images/logo.gif" alt="logo" /> -->
+          <span class="animated-logo"></span>
+        </a>
+      </div>
+  </header>
+
+
+  <div class="shape" style="width: 10px;padding: 50px;float: right;margin-right: 212px;margin-top: -20px;border-bottom-left-radius: 50px;border-bottom-right-radius: 50px;background: linear-gradient(0deg, #f17509 0%, #ffc000 100%);"></div>
+  <div class="login" id="logreg" onclick="show_login();">
+    <p><a href="signup.php" style="color:#f17509;margin-left: 100px;cursor: pointer;">Login / Sign-up</a></p>
+  </div>
+
+
+  <div class="fixedbanner-area clearfix">
+    <div class="container-fluid">
+
+      <div class="ctrl-wraper2">
+        <div class="bannertext">
+          <h1 class="rellax" data-rellax-speed="3" data-rellax-percentage="0.3">
+            <strong>Bookme</strong>
+            <strong>lets<span>go</span></strong>
+          </h1>
+
+          <span class="rellax" data-rellax-speed="2" data-rellax-percentage="0.1">The one and only stop for every
+            traveler</span>
+        </div>
+
+        <div class="parallax-dots">
+          <ul>
+            <li><a data-scroll="" href="#flightbooking">Flight Booking</a></li>
+            <li><a data-scroll="" href="#trainbooking">Train booking</a></li>
+            <li><a data-scroll="" href="#hotelbooking">hotel booking</a></li>
+            <li><a data-scroll="" href="#cruisebooking">cruise booking</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bookingsec sec-flightbooking" id="flightbooking">
+    <div class="container-fluid">
+      <div class="ctrl-wraper2">
+
+        <span class="animated-gt-airplane section-icon rellax" data-rellax-speed="2" data-rellax-percentage="0.1"></span>
+
+
+        <div class="secmain-img-wraper rellax" data-rellax-speed="5" data-rellax-percentage="0">
+          <img class="secmain-img" src="images/banner-animation/cloud.png" alt="flight">
+
+          <span id="overlap1">
+            <img src="images/banner-animation/flight.png" alt="flight">
+          </span>
+
+          <div class="motionpoints">
+            <div class="star star-1"></div>
+            <div class="star star-2"></div>
+            <div class="star star-3"></div>
+            <div class="star star-4"></div>
+            <div class="star star-5"></div>
+          </div>
+
+        </div>
+
+        <div class="ctrl-inner-wraper">
+          <div class="cntbox">
+            <h1 class="sec-heading ">flight <br> booking</h1>
+            <span class="sec-subheading " style="line-height: 1;">Experience the most hassle free flight booking <br>and get great deals with
+              reasonable rates</span>
+
+            <div class="deals-row">
+              <div class="leftbox ">
+                <h2 class="">Great deals <br> and great offers</h2>
+                <p class="">with reasonable rates in top airlince <br> and destinations</p>
+              </div>
+
+
+              <div class="partners">
+                <span data-os-animation="zoomIn" data-os-animation-delay=".4s"><img src="images/partners1.png" alt="partners"></span>
+                <span data-os-animation="zoomIn"><img src="images/partners2.png" alt="partners"></span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="formbox">
+            <div class="pnl-header" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+              <ul class="trip-switch default">
+                <li class="oneway"><span>1 way</span></li>
+                <li class="roundtrip active"><span>Round trip</span></li>
+              </ul>
+              <p> instant flight booking system <br>domestic and internationl flight </p>
+            </div>
+
+            <div class="pnl-body">
+
+
+              <form action="flight.php" method="post">
+
+
+                <div class="form-field icon-passenger srcby-counter" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+                  <label>Username</label>
+                  <input type="text" name="name" style="border-bottom: 1px solid #f89605;">
+                </div>
+
+
+                <div class="form-field icon-passenger srcby-counter" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+                  <label>Gmail</label>
+                  <input type="email" name="gmail" style="border-bottom: 1px solid #f89605;">
+                </div>
+
+
+
+                <div class="form-field icon-location srcby-counter" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+                  <label>From</label>
+                  <select class="inputype1" name="from">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                    <option value="Uk">Uk</option>
+                    <option value="Sinagapore">Sinagapore</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Germany">Germany</option>
+                  </select>
+                </div>
+
+                <div class="form-field icon-location srcby-counter" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+                  <label>To</label>
+                  <select class="inputype1" name="to">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                    <option value="Uk">Uk</option>
+                    <option value="Sinagapore">Sinagapore</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Germany">Germany</option>
+                  </select>
+                </div>
+
+                <div data-date-picker="" data-date-picker-type="single" class="form-field icon-calendar bx--date-picker bx--date-picker--single" data-os-animation="fadeInUp" data-os-animation-delay="1">
+                  <svg data-date-picker-icon="" class="bx--date-picker__icon"></svg>
+                  <label>departure</label>
+                  <input type="text" id="date-picker-5" name="departure" class="inputype1 bx--date-picker__input" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy" data-date-picker-input="">
+                </div>
+
+                <div data-date-picker="" data-date-picker-type="single" class="form-field icon-calendar bx--date-picker bx--date-picker--single" data-os-animation="fadeInUp" data-os-animation-delay="1">
+                  <svg data-date-picker-icon="" class="bx--date-picker__icon"></svg>
+                  <label>return</label>
+                  <input type="text" id="date-picker-4" name="return" class="inputype1 bx--date-picker__input" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy" data-date-picker-input="">
+                </div>
+
+                <div class="form-field icon-passenger srcby-counter" data-os-animation="fadeInUp" data-os-animation-delay="1.6s">
+                  <label>Passengers</label>
+                  <select class="inputype1" name="passengers">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="1 adult + 0 child">1 adult + 0 child</option>
+                    <option value="1 adult + 1 child">1 adult + 1 child</option>
+                    <option value="1 adult + 2 child">1 adult + 2 child</option>
+                    <option value="2 adult + 0 child">2 adult + 0 child</option>
+                    <option value="2 adult + 1 child">2 adult + 1 child</option>
+                    <option value="2 adult + 2 child">2 adult + 2 child</option>
+                  </select>
+                </div>
+
+                <div class="form-field icon-catagory srcby-counter" data-os-animation="fadeInUp" data-os-animation-delay="1.6s">
+                  <label>class</label>
+                  <select class="inputype1" name="class">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="Business">Economy</option>
+                    <option value="Business">Business</option>
+                  </select>
+                </div>
+
+
+                <div class="btn-group">
+                  <button class="form_btn" type="submit" name="submit">Book now</button>
+                </div>
+
+
+              </form>
+
+            </div>
+
+            <span class="gt-shape" data-os-animation="zoomIn"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="bookingsec sec-trainbooking" id="trainbooking">
+    <div class="container-fluid">
+      <div class="ctrl-wraper2">
+        <span class="animated-gt-train section-icon rellax" data-rellax-speed="2" data-rellax-percentage="0.1"></span>
+
+        <img class="secmain-img rellax" data-rellax-speed="3" data-rellax-percentage=".9" src="images/train-LGT.gif" alt="train">
+        <!-- <span class="animatiomn-train"><img src="./images/train-anim/" /></span> -->
+
+        <div class="ctrl-inner-wraper" style="top:100px;">
+          <div class="cntbox">
+            <h1 class="sec-heading ">train ticket <br> booking</h1>
+            <span class="sec-subheading " style="line-height: 1;">Experience the most hassle free flight booking <br>and get great deals with
+              reasonable rates</span>
+
+            <div class="deals-row">
+              <div class="leftbox">
+                <h2 class="">Great deals <br> and great offers</h2>
+                <p class="">with reasonable rates in top airlince <br> and destinations</p>
+              </div>
+
+              <div class="partners">
+                <span data-os-animation="zoomIn"><img src="images/partners1.png" alt="partners"></span>
+                <span data-os-animation="zoomIn"><img src="images/partners2.png" alt="partners"></span>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="formbox">
+            <div class="pnl-header" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+              <ul class="trip-switch default">
+                <li class="oneway"><span>1 way</span></li>
+                <li class="roundtrip active"><span>Round trip</span></li>
+              </ul>
+              <p> instant flight booking system <br>domestic and internationl flight </p>
+            </div>
+
+            <div class="pnl-body">
+              <form method="post" action="train.php">
+
+                <div class="form-field icon-passenger srcby-counter" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+                  <label>Username</label>
+                  <input type="text" name="name" style="border-bottom: 1px solid #f89605;">
+                </div>
+
+
+                <div class="form-field icon-passenger srcby-counter" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+                  <label>Gmail</label>
+                  <input type="email" name="gmail" style="border-bottom: 1px solid #f89605;">
+                </div>
+
+
+                <div class="form-field icon-location srcby-counter ">
+                  <label>from</label>
+                  <select class="inputype1" name="from">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mysore">Mysore</option>
+                  </select>
+                </div>
+
+                <div class="form-field icon-location srcby-counter ">
+                  <label>to</label>
+                  <select class="inputype1" name="to">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mysore">Mysore</option>
+                  </select>
+                </div>
+
+                <div data-date-picker="" data-date-picker-type="single" class="form-field icon-calendar bx--date-picker bx--date-picker--single ">
+                  <svg data-date-picker-icon="" class="bx--date-picker__icon"></svg>
+                  <label>departure</label>
+                  <input type="text" name="departure" id="date-picker-6" class="inputype1 bx--date-picker__input" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy" data-date-picker-input="">
+                </div>
+
+                <div data-date-picker="" data-date-picker-type="single" class="form-field icon-calendar bx--date-picker bx--date-picker--single ">
+                  <svg data-date-picker-icon="" class="bx--date-picker__icon"></svg>
+                  <label>return</label>
+                  <input type="text" name="return" id="date-picker-7" class="inputype1 bx--date-picker__input" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy" data-date-picker-input="">
+                </div>
+
+                <div class="form-field icon-passenger srcby-counter ">
+                  <label>Passengers</label>
+                    <select class="inputype1" name="passengers">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="1 adult + 0 child">1 adult + 0 child</option>
+                    <option value="1 adult + 1 child">1 adult + 1 child</option>
+                    <option value="1 adult + 2 child">1 adult + 2 child</option>
+                    <option value="2 adult + 0 child">2 adult + 0 child</option>
+                    <option value="2 adult + 1 child">2 adult + 1 child</option>
+                    <option value="2 adult + 2 child">2 adult + 2 child</option>
+                  </select>
+                </div>
+
+                <div class="form-field icon-catagory srcby-counter ">
+                  <label>class</label>
+                  <select class="inputype1" name="class">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="Business">Economy</option>
+                    <option value="Business">Business</option>
+                  </select>
+                </div>
+
+                <div class="btn-group">
+                  <button class="form_btn" type="submit" name="submit">Book now</button>
+                </div>
+              </form>
+
+            </div>
+
+            <span class="gt-shape" data-os-animation="zoomIn"></span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bookingsec sec-hotelbooking">
+    <div class="container-fluid">
+      <div class="ctrl-wraper2" id="hotelbooking">
+        <span class="animated-gt-door-sign section-icon rellax" data-rellax-speed="2" data-rellax-percentage="0.1"></span>
+
+        <img class="secmain-img rellax" data-rellax-speed="2" data-rellax-percentage="0.6" src="images/home-hotel.png" alt="hotel">
+
+        <div class="ctrl-inner-wraper" style="top: 250px;">
+          <div class="cntbox">
+            <h1 class="sec-heading ">Exotic hotel <br> booking</h1>
+            <span class="sec-subheading " style="line-height: 1;">Experience the most hassle free flight booking <br>and get great deals with
+              reasonable rates</span>
+
+            <div class="deals-row">
+              <div class="leftbox">
+                <h2 class="">Great deals <br> and great offers</h2>
+                <p class="">with reasonable rates in top airlince <br> and destinations</p>
+              </div>
+
+              <div class="partners">
+                <span data-os-animation="zoomIn" data-os-animation-delay=".4s"><img src="images/partners1.png" alt="partners"></span>
+                <span data-os-animation="zoomIn"><img src="images/partners2.png" alt="partners"></span>
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="formbox">
+            <div class="pnl-header" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+              <p> instant flight booking system <br>domestic and internationl flight </p>
+            </div>
+            <div class="pnl-body">
+              <form method="post" action="hotel.php">
+
+
+
+                <div class="form-field icon-passenger srcby-counter" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+                  <label>Username</label>
+                  <input type="text" name="name" style="border-bottom: 1px solid #f89605;">
+                </div>
+
+
+                <div class="form-field icon-passenger srcby-counter" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+                  <label>Gmail</label>
+                  <input type="email" name="gmail" style="border-bottom: 1px solid #f89605;">
+                </div>
+
+
+
+                <div class="form-field icon-location chk-city">
+                  <label>Check in city</label>
+                  <select class="inputype1" name="from">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="Tiruvottiyur">Tiruvottiyur</option>
+                    <option value="Pallavaram">Pallavaram</option>
+                    <option value="Tambaram">Tambaram</option>
+                    <option value="Avadi">Avadi</option>
+                    <option value="Alandur">Alandur</option>
+                    <option value="Madavaram">Madavaram</option>
+                  </select>
+                </div>
+
+                <div data-date-picker="" data-date-picker-type="single" class="form-field icon-calendar bx--date-picker bx--date-picker--single ">
+                  <svg data-date-picker-icon="" class="bx--date-picker__icon"></svg>
+                  <label>check in</label>
+                  <input type="text" name="departure" id="date-picker-6" class="inputype1 bx--date-picker__input" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy" data-date-picker-input="">
+                </div>
+
+                <div data-date-picker="" data-date-picker-type="single" class="form-field icon-calendar bx--date-picker bx--date-picker--single ">
+                  <svg data-date-picker-icon="" class="bx--date-picker__icon"></svg>
+                  <label>check out</label>
+                  <input type="text" name="return" id="date-picker-6" class="inputype1 bx--date-picker__input" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy" data-date-picker-input="">
+                </div>
+
+                <div class="form-field icon-passenger srcby-counter ">
+                  <label>guests</label>
+                  <select class="inputype1" name="passengers">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="1 adult + 0 child">1 adult + 0 child</option>
+                    <option value="1 adult + 1 child">1 adult + 1 child</option>
+                    <option value="1 adult + 2 child">1 adult + 2 child</option>
+                    <option value="2 adult + 0 child">2 adult + 0 child</option>
+                    <option value="2 adult + 1 child">2 adult + 1 child</option>
+                    <option value="2 adult + 2 child">2 adult + 2 child</option>
+                  </select>
+                </div>
+
+                <div class="form-field icon-room srcby-counter ">
+                  <label>rooms</label>
+                  <select class="inputype1" name="class">
+                    <option disabled="" selected=""></option>
+                    <option value="1 delux room">1 delux room</option>
+                    <option value="2 delux room">2 delux room</option>
+
+                  </select>
+                </div>
+
+                <div class="btn-group">
+                  <button class="form_btn" type="submit" name="submit">Book now</a>
+                </div>
+              </form>
+
+            </div>
+            <span class="gt-shape" data-os-animation="zoomIn"></span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="bookingsec sec-cruisebooking">
+    <div class="container-fluid">
+      <div class="ctrl-wraper2" id="cruisebooking" style="padding-top: 22%;">
+
+        <span class="animated-gt-cruise section-icon rellax" data-rellax-speed="2" data-rellax-percentage="0.1"></span>
+
+        <img class="secmain-img rellax" data-rellax-speed="2" data-rellax-percentage="0.6" src="images/home-cruise.png" alt="cruise">
+
+        <div class="ctrl-inner-wraper">
+          <div class="cntbox">
+            <h1 class="sec-heading ">Luxury Cruise <br> booking</h1>
+            <span class="sec-subheading" style="line-height: 1;" data-os-animation="fadeInUp" data-os-animation-delay=" ">Experience the most
+              hassle free flight booking <br>and get great deals with reasonable rates</span>
+
+            <div class="deals-row">
+              <div class="leftbox">
+                <h2 class="">Great deals <br> and great offers</h2>
+                <p class="">with reasonable rates in top airlince <br> and destinations</p>
+              </div>
+
+              <div class="partners">
+                <span data-os-animation="zoomIn" data-os-animation-delay=".4s"><img src="images/partners1.png" alt="partners"></span>
+                <span data-os-animation="zoomIn"><img src="images/partners2.png" alt="partners"></span>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="formbox">
+            <div class="pnl-header">
+              <ul class="trip-switch default ">
+                <li class="oneway"><span>1 way</span></li>
+                <li class="roundtrip active"><span>Round trip</span></li>
+              </ul>
+              <p> instant flight booking system <br>domestic and internationl flight </p>
+            </div>
+            <div class="pnl-body">
+              <form method="post" action="ship.php">
+
+
+                <div class="form-field icon-passenger srcby-counter" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+                  <label>Username</label>
+                  <input type="text" name="name" style="border-bottom: 1px solid #f89605;">
+                </div>
+
+
+                <div class="form-field icon-passenger srcby-counter" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+                  <label>Gmail</label>
+                  <input type="email" name="gmail" style="border-bottom: 1px solid #f89605;">
+                </div>
+
+
+                <div class="form-field icon-location srcby-counter ">
+                  <label>from</label>
+                  <select class="inputype1" name="from">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                    <option value="Uk">Uk</option>
+                    <option value="Sinagapore">Sinagapore</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Germany">Germany</option>
+                  </select>                </div>
+
+                <div class="form-field icon-location srcby-counter ">
+                  <label>to</label>
+                  <select class="inputype1" name="to">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                    <option value="Uk">Uk</option>
+                    <option value="Sinagapore">Sinagapore</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Germany">Germany</option>
+                  </select>
+                </div>
+
+                <div data-date-picker="" data-date-picker-type="single" class="form-field icon-calendar bx--date-picker bx--date-picker--single ">
+                  <svg data-date-picker-icon="" class="bx--date-picker__icon"></svg>
+                  <label>departure</label>
+                  <input type="text" name="departure" id="date-picker-12" class="inputype1 bx--date-picker__input" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy" data-date-picker-input="">
+                </div>
+
+                <div data-date-picker="" data-date-picker-type="single" class="form-field icon-calendar bx--date-picker bx--date-picker--single ">
+                  <svg data-date-picker-icon="" class="bx--date-picker__icon"></svg>
+                  <label>return</label>
+                  <input type="text" name="return" id="date-picker-13" class="inputype1 bx--date-picker__input" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy" data-date-picker-input="">
+                </div>
+
+                <div class="form-field icon-passenger srcby-counter ">
+                  <label>Passengers</label>
+                  <select class="inputype1" name="passengers">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="1 adult + 0 child">1 adult + 0 child</option>
+                    <option value="1 adult + 1 child">1 adult + 1 child</option>
+                    <option value="1 adult + 2 child">1 adult + 2 child</option>
+                    <option value="2 adult + 0 child">2 adult + 0 child</option>
+                    <option value="2 adult + 1 child">2 adult + 1 child</option>
+                    <option value="2 adult + 2 child">2 adult + 2 child</option>
+                  </select>
+                </div>
+
+                <div class="form-field icon-catagory srcby-counter ">
+                  <label>class</label>
+                  <select class="inputype1" name="class">
+                    <option value="" disabled="" selected=""></option>
+                    <option value="economy">economy</option>
+                    <option value="Business">Business</option>
+
+                  </select>
+                </div>
+
+
+                <div class="btn-group">
+                  <button class="form_btn" type="submit" name="submit">Book now</a>
+                </div>
+              </form>
+
+            </div>
+            <span class="gt-shape" data-os-animation="zoomIn"></span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="bottom-left">
+    <svg class="shapes2 layer2 ">
+      <use xlink:href="./svg/shapes.svg#shapes2"></use>
+    </svg>
+
+    <svg class="shapes3 layer3">
+      <use xlink:href="./svg/shapes.svg#shapes3" fill="url(#dots-4)"></use>
+    </svg>
+  </div>
+
+  <footer>
+    <div class="container-fluid" data-rellax-speed="2" data-rellax-percentage=".7">
+      <div class="ctrl-wraper2">
+
+        <div class="ftr-main-sec">
+          
+
+          <div class="news">
+            <h5 class="ftr-headng">news</h5>
+            <ul class="newslist">
+              <li>
+                <a href="blognews.html">
+                  <span class="nsthumb"><img src="images/footer-news-thumb1.jpg" alt="img"></span>
+                  <p>Best customer service award of the year 2021</p>
+                  <span class="date">31 oct</span>
+                </a>
+              </li>
+              <li>
+                <a href="blognews.html">
+                  <span class="nsthumb"><img src="images/footer-news-thumb2.jpg" alt="img"></span>
+                  <p>Best booking site of the year is Bookme.com</p>
+                  <span class="date">15 oct</span>
+                </a>
+              </li>
+              <li>
+                <a href="blognews.html">
+                  <span class="nsthumb"><img src="images/footer-news-thumb3.jpg" alt="img"></span>
+                  <p>Cheep and best booking site</p>
+                  <span class="date">13 oct</span>
+                </a>
+              </li>
+              <li>
+                <a href="blognews.html">
+                  <span class="nsthumb"><img src="images/footer-news-thumb4.jpg" alt="img"></span>
+                  <p>World best booking site is Bookme.com</p>
+                  <span class="date">2 oct</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="social">
+            <div class="instagram">
+              <h5 class="ftr-headng">instagram</h5>
+              <ul class="insta-thumbgal">
+                <li><a href="#"><img src="images/insta-thumb1.jpg" alt="img"></a></li>
+                <li><a href="#"><img src="images/insta-thumb2.jpg" alt="img"></a></li>
+                <li><a href="#"><img src="images/insta-thumb3.jpg" alt="img"></a></li>
+                <li><a href="#"><img src="images/insta-thumb4.jpg" alt="img"></a></li>
+                <li><a href="#"><img src="images/insta-thumb5.jpg" alt="img"></a></li>
+                <li><a href="#"><img src="images/insta-thumb6.jpg" alt="img"></a></li>
+              </ul>
+            </div>
+
+            <div class="connect-with-us">
+              <h5 class="ftr-headng">social with us</h5>
+              <ul class="social-links">
+                <li><a href="#" class="gt-uniE918 ft-pinterest"></a></li>
+                <li><a href="#" class="gt-uniE91B ft-twitter"></a></li>
+                <li><a href="#" class="gt-uniE910 ft-behance"></a></li>
+                <li><a href="#" class="gt-internet ft-dribbble"></a></li>
+                <li><a href="#" class="gt-uniE914 ft-facebook"></a></li>
+                <li><a href="#" class="gt-uniE916 ft-linkedin"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footernote-area">
+
+          <div class="footer-logo-box">
+            <a class="footer-logo" href="index.html">
+              <img src="images/logo.png" alt="logo">
+              <!-- <span class="logo animated-logo"></span> -->
+            </a>
+            <div class="ftr-logo-txt" style="line-height: 1;">
+              <strong>Bookme lets go</strong>
+              <span>The one and only stop for every traveler</span>
+            </div>
+          </div>
+
+          <ul class="footer-dtls">
+            <li style="line-height: 1;"><a href="#"><span class="gt-internet"></span>we have worldwide travel <br> operators</a></li>
+            <li style="line-height: 1;"><a href="#"><span class="gt-package"></span>free shipping</a></li>
+            <li style="line-height: 1;"><a href="#"><span class="gt-right-arrow"></span>hassle free cancel <br>policies</a></li>
+          </ul>
+
+
+        </div>
+
+        <div class="copyright">
+          <p>Bookme lets go - made in selfcoderacademy</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Serving Since -->
+
+  <div class="top-left">
+    <svg class="shapes1 layer1">
+      <use xlink:href="./svg/shapes.svg#shapes1" fill="url(#gradient1)"></use>
+    </svg>
+    <svg class="shapes2 layer2">
+      <use xlink:href="./svg/shapes.svg#shapes2"></use>
+    </svg>
+    <svg class="shapes3 layer3">
+      <use xlink:href="./svg/shapes.svg#shapes3" fill="url(#dots-4)"></use>
+    </svg>
+  </div>
+
+
+  <!-- svg -->
+  <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg" version="1.1" style="position: absolute; top: 0px;">
+    <defs>
+      <lineargradient id="gradient1" x2="1" y2="1">
+        <stop offset="15%" stop-color="#f47e08"></stop>
+        <stop offset="30%" stop-color="#f68e06"></stop>
+        <stop offset="100%" stop-color="#faa004"></stop>
+      </lineargradient>
+    </defs>
+  </svg>
+
+  <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg" version="1.1" style="position: absolute; ">
+    <defs>
+      <pattern id="dots-4" patternunits="userSpaceOnUse" width=".5" height=".5">
+        <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nNCcgaGVpZ2h0PSc0JyBmaWxsPSdibGFjaycgLz4KPC9zdmc+" x="0" y="0" width=".3" height=".3"> </image>
+      </pattern>
+    </defs>
+  </svg>
+  <!-- for footer dotted bg -->
+  <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg" version="1.1" style="position: absolute; ">
+    <defs>
+      <pattern id="dots-5" patternunits="userSpaceOnUse" width=".6" height=".6">
+        <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nNCcgaGVpZ2h0PSc0JyBmaWxsPSdibGFjaycgLz4KPC9zdmc+" x="0" y="0" width=".6" height=".6"> </image>
+      </pattern>
+    </defs>
+  </svg>
+
+  <script src="scripts/vendor.js"></script>
+
+  <script src="scripts/plugins.js"></script>
+
+  <!-- water ripper js -->
+  <script src="assets/script/jquery.ripples.js"></script>
+
+  <!-- extra script files -->
+  <script src="assets/script/jquery.flipster.min.js"></script>
+  <!-- <script src="assets/script/jquery.easeScroll.js"></script> -->
+  <script src="assets/script/pricerange.js"></script>
+  <script src="assets/script/ScrollToPlugin.min.js"></script>
+
+  <!-- pb calendar -->
+  <script src="assets/script/pb.calendar.js"></script>
+  <script src="assets/script/moment.min.js"></script>
+  <script src="assets/script/materialize.js"></script>
+  <script src="assets/script/mosaic.js"></script>
+  <script src="assets/script/swiper.js"></script>
+
+  <!-- for dotted svg line -->
+  <script src="assets/script/Draggable.min.js"></script>
+  <script src="assets/script/ThrowPropsPlugin.min.js"></script>
+  <script src="assets/script/DrawSVGPlugin.min.js"></script>
+  <script src="assets/script/AnticipateEase.min.js"></script>
+  <script src="assets/script/MorphSVGPlugin.min.js"></script>
+
+  <script src="assets/script/GSDevTools.min.js"></script>
+  <script src="assets/script/moment-with-locales.min.js"></script>
+  <script src="assets/script/rescalendar.min.js"></script>
+
+  <!-- smooth page scroll script -->
+  <!-- <script src="assets/script/smooth-scroll.polyfills.min.js"></script> -->
+  <script src="assets/script/car-script.js"></script>
+  <script src="assets/script/gratedeal.js"></script>
+  <script src="assets/script/particles.min.js"></script>
+  <script src="assets/script/carbon-components.js"></script>
+  <script src="assets/script/anime.min.js"></script>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
